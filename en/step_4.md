@@ -27,5 +27,5 @@ def draw():
 </div>
 
 <div class="c-project-output">
-<pre>WHAT THEY SHOULD SEE IF OUTPUT IS TEXT - OTHERWISE USE IMAGE</pre>
+<pre>You should see a scary image after a random delay of between 5 and 15 seconds.</pre>
 </div>
