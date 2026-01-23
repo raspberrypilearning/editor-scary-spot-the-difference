@@ -1,97 +1,29 @@
-## Switch images
-
-To switch the image to the scary one, you need to use `blit` again.
-
+<h2 class="c-project-heading--task">Change the range</h2>
 --- task ---
-First load the scary image into memory and scale it, in the same way as the `difference` image.
+The range of seconds used for the delay is set in the `preload()` function.
+--- /task ---
 
+Alter the random range.
+
+We have changed this range to between 3 and 8 seconds.
+
+Experiment with your own ranges.
+
+<div class="c-project-code">
 --- code ---
 ---
 language: python
-filename: scary_spot_the_difference.py
+filename: main.py
 line_numbers: true
-line_number_start: 
-highlight_lines: 15,16
+line_number_start: 6
+line_highlights: 12
 ---
-import pygame
-from time import sleep
-from random import randrange
-
-pygame.init()
-
-width = pygame.display.Info().current_w
-height = pygame.display.Info().current_h
-
-screen = pygame.display.set_mode((width, height))
-
-difference = pygame.image.load('spot_the_diff.png')
-difference = pygame.transform.scale(difference, (width, height))
-
-zombie = pygame.image.load('scary_face.png')
-zombie = pygame.transform.scale(zombie, (width, height))
-
-screen.blit(difference, (0, 0))
-pygame.display.update()
-
-sleep(3)
-
-pygame.quit()
+def preload():
+    global spot_diff_img, scary_img
+    global start_time, scare_delay
+    spot_diff_img = load_image("spot_the_diff.png")
+    scary_img = load_image("scary_face.png")
+    start_time = time()
+    scare_delay = randrange(3, 8)
 --- /code ---
---- /task ---
-
---- task ---
-Now add two new lines to prepare the window for displaying the new image, and then update the display.
-
---- hints --- --- hint ---
-You need to use the `screen.blit()` command with a file name.
---- /hint --- --- hint ---
-Here are the lines of code you need to add:
-```python
-screen.blit(zombie, (0,0))
-pygame.display.update()
-```
-
---- /hint --- --- hint ---
-Here is the full code:
-
---- code ---
----
-language: python
-filename: scary_spot_the_difference.py
-line_numbers: true
-line_number_start: 
-highlight_lines: 23,24
----
-import pygame
-from time import sleep
-from random import randrange
-
-pygame.init()
-
-width = pygame.display.Info().current_w
-height = pygame.display.Info().current_h
-
-screen = pygame.display.set_mode((width, height))
-
-difference = pygame.image.load('spot_the_diff.png')
-difference = pygame.transform.scale(difference, (width, height))
-
-zombie = pygame.image.load('scary_face.png')
-zombie = pygame.transform.scale(zombie, (width, height))
-
-screen.blit(difference, (0, 0))
-pygame.display.update()
-
-sleep(3)
-
-screen.blit(zombie, (0,0))
-pygame.display.update()
-
-pygame.quit()
---- /code ---
---- /hint --- --- /hints ---
---- /task ---
-
---- task ---
-Save and run the program again to see the new image being displayed.
---- /task ---
+</div>

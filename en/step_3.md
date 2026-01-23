@@ -1,60 +1,41 @@
-##	Set up your prank
-
-Your first step is to display the `spot-the-diff.png` image on the screen. To do this, you need the computer to detect the size of your monitor. You need to know the monitor size because different types of monitors have different resolutions, and you need to know the resolution to display the image correctly.
-
+<h2 class="c-project-heading--task">Swap to a scary image</h2>
 --- task ---
-Create two new variables called `width` and `height`. Then use the `display.Infor()` methods to find out the width and height of your monitor.
+Swap images after 5 seconds.
+--- /task ---
 
+Calculate how long the program has been running and show the scary image when 5 seconds have passed.
+
+<div class="c-project-code">
 --- code ---
 ---
 language: python
-filename: scary_spot_the_difference.py
+filename: main.py
 line_numbers: true
-line_number_start: 
-line_highlights: 8-9
+line_number_start: 19
+line_highlights: 20-26
 ---
-import pygame
-from time import sleep
-from random import randrange
-
-pygame.init()
-
-width = pygame.display.Info().current_w
-height = pygame.display.Info().current_h
---- /code ---
---- /task ---
-
---- task ---
-Now tell Pygame to create a large window in which the game can be played. Then get Pygame to quit.
-
---- code ---
----
-language: python
-filename: scary_spot_the_difference.py
-line_numbers: true
-line_number_start: 
-line_highlights: 10, 12
----
-import pygame
-from time import sleep
-from random import randrange
-
-pygame.init()
-
-width = pygame.display.Info().current_w
-height = pygame.display.Info().current_h
-
-screen = pygame.display.set_mode((width, height))
-	
-pygame.quit()
+def draw():
+    elapsed = time() - start_time
+    if elapsed < 5:
+        # Show spot the difference image
+        image(spot_diff_img, 0, 0, width, height)
+    else:
+        # Time for a scare!
+        image(scary_img, 0, 0, width, height)
 --- /code ---
 
---- /task ---
+</div>
 
---- task ---
+<div class="c-project-output">
 
-Save your program and then run it. You should see a blank rectangular window open. This is the Pygame window. It should close itself straight away, because your program reaches the `pygame.quit()` line.
---- /task ---
+<pre> You should see a scary image after 5 seconds.</pre>
+</div>
 
+<div class="c-project-callout c-project-callout--tip">
 
+### Tip
+
+- `elapsed` will let us decide when to swap images.
+
+</div>
 

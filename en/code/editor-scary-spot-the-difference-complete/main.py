@@ -1,33 +1,29 @@
-import pygame
-from pygame.locals import *
-from time import sleep
+from p5 import *
+from time import *
 from random import randrange
 
-pygame.init()
 
-width = pygame.display.Info().current_w
-height = pygame.display.Info().current_h
+def preload():
+    global spot_diff_img, scary_img
+    global start_time, scare_delay
+    spot_diff_img = load_image("spot_the_diff.png")
+    scary_img = load_image("scary_face.png")
+    start_time = time()
+    scare_delay = randrange(5, 15)
 
-screen = pygame.display.set_mode((width, height), FULLSCREEN)
 
-difference = pygame.image.load("spot_the_diff.png")
-difference = pygame.transform.scale(difference, (width, height))
+def setup():
+    size(1920, 1080)
 
-screen.blit(difference, (0, 0))
-pygame.display.update()
 
-zombie = pygame.image.load("scary_face.png")
-zombie = pygame.transform.scale(zombie, (width, height))
+def draw():
+    elapsed = time() - start_time
+    if elapsed < scare_delay:
+        # Show spot the difference image
+        image(spot_diff_img, 0, 0, width, height)
+    else:
+        # Time for scare!
+        image(scary_img, 0, 0, width, height)
 
-scream = pygame.mixer.Sound("scream.wav")
 
-sleep(randrange(5, 15))
-
-scream.play()
-sleep(0.4)
-screen.blit(zombie, (0, 0))
-pygame.display.update()
-
-sleep(3)
-scream.stop()
-pygame.quit()
+run()

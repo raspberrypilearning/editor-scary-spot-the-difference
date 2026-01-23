@@ -1,27 +1,26 @@
-## Get started
-
-You're going to need two images and a sound file for this activity.
-
+<h2 class="c-project-heading--task">Show the difference image</h2>
 --- task ---
-Either [download the resources here](http://rpf.io/p/en/scary-spot-the-difference-go){:target="_blank"} and unzip the folder, or download the two images and the sound file below.
+Your first step is to display the `spot_the_diff.png` image.
 --- /task ---
 
-![image](images/spot_the_diff.png)
-![image](images/scary_face.png)
+Edit the `draw()` function.
 
-<audio controls>
-<source src="resources/scream.wav" type="audio/wav">
-Your browser does not support the<code>audio</code> element.
-</audio>
+<div class="c-project-code">
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 19
+line_highlights: 20
+---
+def draw():
+    image(spot_diff_img, 0, 0, width, height)
+--- /code ---
 
---- task ---
-Either open the `scary_spot_the_difference.py` file (from [the resources](http://rpf.io/p/en/scary-spot-the-difference-go){:target="_blank"}) in your favourite editor application ([for example Mu](https://projects.raspberrypi.org/en/projects/getting-started-with-mu)), or copy and paste the code below into a new file.
+</div>
 
-```python
-import pygame
-from time import sleep
-from random import randrange
+<div class="c-project-output">
 
-pygame.init()
-```
---- /task ---
+![The scary spot the difference image - two panels split vertically, each showing a witch and a cauldren](images/spot_the_diff.png)
+</div>
