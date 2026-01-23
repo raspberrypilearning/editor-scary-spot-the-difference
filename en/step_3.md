@@ -28,7 +28,7 @@ def draw():
 
 <div class="c-project-output">
 
-<pre> You should see a scary image after 5 seconds.</pre>
+<pre>You should see a scary image after 5 seconds.</pre>
 </div>
 
 <div class="c-project-callout c-project-callout--tip">

@@ -27,3 +27,7 @@ def preload():
     scare_delay = randrange(3, 8)
 --- /code ---
 </div>
+
+<div class="c-project-output">
+<pre>You should see a scary image after a random delay in the range os seconds you set.</pre>
+</div>
