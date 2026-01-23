@@ -1,0 +1,4 @@
+name: "Scary Spot The Difference"
+identifier: "editor-scary-spot-the-difference-starter"
+type: 'python'
+build: true
