@@ -1,6 +1,8 @@
 <h2 class="c-project-heading--task">What you will make</h2>
 --- task ---
+
 Create a Spot the Difference game with a big surprise, to scare all your friends.
+
 --- /task ---
 
 While the player is searching for all the differences in an image, suddenly a scary image will appear!

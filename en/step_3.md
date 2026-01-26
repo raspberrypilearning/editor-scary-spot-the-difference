@@ -1,6 +1,8 @@
 <h2 class="c-project-heading--task">Swap to a scary image</h2>
 --- task ---
+
 Swap images after 5 seconds.
+
 --- /task ---
 
 Calculate how long the program has been running and show the scary image when 5 seconds have passed.
