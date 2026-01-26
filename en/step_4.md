@@ -1,10 +1,13 @@
 <h2 class="c-project-heading--task">Make it random</h2>
 --- task ---
+
 Your program is predictable. 
+
 Add randomness by changing the pause between the two images being displayed.
+
 --- /task ---
 
-Change the `sleep` pause between the two images being on screen to a random number.
+Change the pause between the two images being on screen to the `scare_delay`, which is currently set using `randrange` to a random value between 5 and 14.
 
 <div class="c-project-code">
 --- code ---
@@ -27,5 +30,13 @@ def draw():
 </div>
 
 <div class="c-project-output">
-<pre>You should see a scary image after a random delay of between 5 and 15 seconds.</pre>
+<pre>You should see a scary image after a random delay of between 5 and 14 seconds.</pre>
+</div>
+
+<div class="c-project-callout c-project-callout--tip">
+
+### Tip
+
+- The second value in `randrange` is not included in the range, so this is why the maximum delay is 14, not 15 seconds.
+
 </div>

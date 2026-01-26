@@ -1,11 +1,13 @@
 <h2 class="c-project-heading--task">Change the range</h2>
 --- task ---
+
 The range of seconds used for the delay is set in the `preload()` function.
+
 --- /task ---
 
-Alter the random range.
+Alter the values in `randrange`.
 
-We have changed this range to between 3 and 8 seconds.
+We have changed it to `randrange(3, 8)`, to generate values between 3 and 7.
 
 Experiment with your own ranges.
 
@@ -29,5 +31,7 @@ def preload():
 </div>
 
 <div class="c-project-output">
-<pre>You should see a scary image after a random delay in the range os seconds you set.</pre>
+<pre>You should see a scary image after a random delay in the range of seconds you set.</pre>
 </div>
+
+Well done! you have completed the project!
