@@ -1,13 +1,14 @@
-<h2 class="c-project-heading--task">Make it random</h2>
---- task ---
+<h2 class="c-project-heading--task">Change the range</h2>
+### Step 1
 
-Your program is predictable. 
+The range of seconds used for the delay is set in the `preload()` function.
 
-Add randomness by changing the pause between the two images being displayed.
 
---- /task ---
+Alter the values in `randrange`.
 
-Change the pause between the two images being on screen to the `scare_delay`, which is currently set using `randrange` to a random value between 5 and 14.
+We have changed it to `randrange(3, 8)`, to generate values between 3 and 7.
+
+Experiment with your own ranges.
 
 <div class="c-project-code">
 --- code ---
@@ -15,28 +16,21 @@ Change the pause between the two images being on screen to the `scare_delay`, wh
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 19
-line_highlights: 21
+line_number_start: 6
+line_highlights: 12
 ---
-def draw():
-    elapsed = time() - start_time
-    if elapsed < scare_delay:
-        # Show spot the difference image
-        image(spot_diff_img, 0, 0, width, height)
-    else:
-        # Time for a scare!
-        image(scary_img, 0, 0, width, height)
+def preload():
+    global spot_diff_img, scary_img
+    global start_time, scare_delay
+    spot_diff_img = load_image("spot_the_diff.png")
+    scary_img = load_image("scary_face.png")
+    start_time = time()
+    scare_delay = randrange(3, 8)
 --- /code ---
 </div>
 
 <div class="c-project-output">
-<pre>You should see a scary image after a random delay of between 5 and 14 seconds.</pre>
+<pre>You should see a scary image after a random delay in the range of seconds you set.</pre>
 </div>
 
-<div class="c-project-callout c-project-callout--tip">
-
-### Tip
-
-- The second value in `randrange` is not included in the range, so this is why the maximum delay is 14, not 15 seconds.
-
-</div>
+Well done! you have completed the project!
