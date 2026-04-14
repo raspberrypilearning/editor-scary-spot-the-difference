@@ -1,4 +1,5 @@
 <h2 class="c-project-heading--task">Swap to a scary image</h2>
+
 ### Step 1
 
 Swap images after 5 seconds.

@@ -1,4 +1,5 @@
 <h2 class="c-project-heading--task">Change the range</h2>
+
 ### Step 1
 
 The range of seconds used for the delay is set in the `preload()` function.
