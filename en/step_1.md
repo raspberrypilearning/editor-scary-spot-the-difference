@@ -1,4 +1,5 @@
 <h2 class="c-project-heading--task">Show the difference image</h2>
+
 ### Step 1
 
 Your first step is to display the `spot_the_diff.png` image.
