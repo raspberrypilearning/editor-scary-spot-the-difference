@@ -1,9 +1,8 @@
 <h2 class="c-project-heading--task">Swap to a scary image</h2>
 
-### Step 1
-
 Swap images after 5 seconds.
 
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 Calculate how long the program has been running and show the scary image when 5 seconds have passed.
 
@@ -33,10 +32,14 @@ def draw():
 <pre>You should see a scary image after 5 seconds.</pre>
 </div>
 
-<div class="c-project-callout c-project-callout--tip">
-
 ### Tip
+
+<div class="c-project-callout c-project-callout--tip">
 
 - `elapsed` will let us decide when to swap images.
 
 </div>
+
+## Now run your code
+
+Confirm the observable result.

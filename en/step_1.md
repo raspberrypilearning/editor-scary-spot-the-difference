@@ -1,9 +1,8 @@
 <h2 class="c-project-heading--task">Show the difference image</h2>
 
-### Step 1
-
 Your first step is to display the `spot_the_diff.png` image.
 
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 Edit the `draw()` function.
 
@@ -26,3 +25,7 @@ def draw():
 
 ![The scary spot the difference image - two panels split vertically, each showing a witch and a cauldren](images/spot_the_diff.png)
 </div>
+
+## Now run your code
+
+Confirm the observable result.

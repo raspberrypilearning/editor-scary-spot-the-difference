@@ -1,8 +1,8 @@
 <h2 class="c-project-heading--task">Make it random</h2>
 
-### Step 1
+Your program is predictable.
 
-Your program is predictable. 
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 Add randomness by changing the pause between the two images being displayed.
 
@@ -33,10 +33,14 @@ def draw():
 <pre>You should see a scary image after a random delay of between 5 and 14 seconds.</pre>
 </div>
 
-<div class="c-project-callout c-project-callout--tip">
-
 ### Tip
+
+<div class="c-project-callout c-project-callout--tip">
 
 - The second value in `randrange` is not included in the range, so this is why the maximum delay is 14, not 15 seconds.
 
 </div>
+
+## Now run your code
+
+Confirm the observable result.

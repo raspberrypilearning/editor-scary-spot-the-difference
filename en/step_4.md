@@ -1,9 +1,8 @@
 <h2 class="c-project-heading--task">Change the range</h2>
 
-### Step 1
-
 The range of seconds used for the delay is set in the `preload()` function.
 
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 Alter the values in `randrange`.
 
@@ -35,3 +34,7 @@ def preload():
 </div>
 
 Well done! you have completed the project!
+
+## Now run your code
+
+Confirm the observable result.
