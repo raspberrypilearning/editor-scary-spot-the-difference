@@ -28,4 +28,4 @@ def draw():
 
 ## Now run your code
 
-Confirm the observable result.
+Run your code and check that the spot-the-difference picture fills the screen.

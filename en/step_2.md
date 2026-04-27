@@ -42,4 +42,4 @@ def draw():
 
 ## Now run your code
 
-Confirm the observable result.
+Run your code and check that the scary image appears after about 5 seconds.
