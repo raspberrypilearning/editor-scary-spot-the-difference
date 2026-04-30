@@ -4,14 +4,15 @@ description: Make a scary 'spot the difference' game in Python
 listed: false
 copyedit: false
 last_tested: "2026-01-23"
+landing: true
 steps:
-- title: Step 1
-- title: Step 2
-  completion:
-  - engaged
-- title: Step 3
-- title: Step 4
-- title: Step 5
-  completion:
-  - internal
-  - external
+  - title: Show the difference image
+  - title: Swap to a scary image
+    completion:
+      - engaged
+  - title: Make it random
+    completion:
+      - internal
+  - title: Change the range
+    completion:
+      - external
